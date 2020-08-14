@@ -4,7 +4,7 @@ col3="green"
 col4="blue"
 mfg=$col1
 mbg=$col2
-local ret_status="%(?:%{$bg[green]$fg[white]%} ✔ %{$bg[$col1]$fg[green]%}:%{$bg[red]$fg[white]%} ❌ %{$bg[$col1]$fg[red]%})"
+local ret_status="%(?:%{$bg[green]$fg[white]%} ✔ %{$bg[$col1]$fg[green]%}:%{$bg[red]$fg[white]%} ✘ %{$bg[$col1]$fg[red]%})"
 
 
 PROMPT='$ret_status$(splitpath $(pwd | sed "s;$HOME;/~;"))%{$reset_color%} '
