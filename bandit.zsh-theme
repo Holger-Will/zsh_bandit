@@ -7,7 +7,7 @@ mbg=$col2
 local ret_status="%(?:%{$bg[green]$fg[white]%} ✔ %{$bg[$col1]$fg[green]%}:%{$bg[red]$fg[white]%} ❌ %{$bg[$col1]$fg[red]%})"
 
 
-PROMPT='$ret_status$(splitpath $(pwd | sed "s;$HOME;/~;"))%{$reset_color%} '
+PROMPT='$ret_status$(splitpath "$(pwd | sed "s;$HOME;/~;")")%{$reset_color%} '
 # PROMPT='$RANDOM'
 # PROMPT='$RANDOM $(my_random)'
 # function my_random(){
